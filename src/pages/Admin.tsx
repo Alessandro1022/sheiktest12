@@ -201,7 +201,7 @@ const Admin = () => {
                   placeholder={t("admin.login.email")}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="border-gray-300 text-gray-900"
+                  className="border-gray-300 bg-white text-gray-900"
                   required
                 />
               </div>
@@ -211,7 +211,7 @@ const Admin = () => {
                   placeholder={t("admin.login.password")}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="border-gray-300 text-gray-900"
+                  className="border-gray-300 bg-white text-gray-900"
                   required
                 />
               </div>
@@ -267,13 +267,13 @@ const Admin = () => {
               placeholder={t("admin.productName")}
               value={productName}
               onChange={(e) => setProductName(e.target.value)}
-              className="border-gray-300 text-gray-900"
+              className="border-gray-300 bg-white text-gray-900"
             />
             <Textarea
               placeholder={t("admin.productDescription")}
               value={productDescription}
               onChange={(e) => setProductDescription(e.target.value)}
-              className="border-gray-300 text-gray-900"
+              className="border-gray-300 bg-white text-gray-900"
             />
             <div>
               <label className="block text-sm font-medium mb-2 text-gray-900">
