@@ -25,8 +25,11 @@ export default function Services() {
           <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             {t("services.hero.title")}
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-2">
             {t("services.hero.subtitle")}
+          </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            {t("services.hero.description")}
           </p>
         </div>
       </section>

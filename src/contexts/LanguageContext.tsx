@@ -17,8 +17,8 @@ const translations = {
     
     // Home page
     "home.hero.title": "Välkommen till Sheik Mobilecenter",
-    "home.hero.subtitle": "Allt inom mobiltelefoni",
-    "home.hero.description": "Vi erbjuder professionella reparationer, köper och säljer telefoner samt erbjuder ett brett sortiment av tillbehör. Med års erfarenhet och expertis garanterar vi kvalitet i varje tjänst.",
+    "home.hero.subtitle": "Din kompletta mobilpartner",
+    "home.hero.description": "Hos oss får du professionell service för alla dina mobilbehov. Vi utför snabba reparationer med kvalitetsdelar, köper och säljer telefoner till rättvisa priser, och erbjuder ett omfattande sortiment av tillbehör. Med gedigen erfarenhet och expertis levererar vi alltid förstklassig service.",
     "home.hero.cta": "Utforska våra tjänster",
     "home.features.repair": "Snabba Reparationer",
     "home.features.repair.desc": "Professionella reparationer med originaldelar",
@@ -29,7 +29,8 @@ const translations = {
     
     // Services page
     "services.hero.title": "Våra Tjänster",
-    "services.hero.subtitle": "Kompletta lösningar för alla dina mobilbehov",
+    "services.hero.subtitle": "Professionella mobilreparationer och försäljning med garanti",
+    "services.hero.description": "Vi är specialister på allt som rör mobiltelefoner. Oavsett om din telefon behöver reparation, om du vill sälja din gamla eller köpa en uppgraderad modell, eller om du söker högkvalitativa tillbehör - vi har lösningen. Varje tjänst utförs med precision och omsorg.",
     "services.repair.title": "Reparationstjänster",
     "services.repair.screen": "Skärmbyte",
     "services.repair.battery": "Batteribyte",
@@ -54,8 +55,8 @@ const translations = {
     "contact.info.hours": "Öppettider",
     "contact.info.hours.weekdays": "Mån-Fre: 12:00 - 19:00",
     "contact.info.hours.weekend": "Lör-Sön: 12:00 - 16:00",
-    "contact.visit.title": "Besök Oss",
-    "contact.visit.description": "Vi finns centralt i staden och välkomnar dig att besöka vår butik. Våra erfarna tekniker är redo att hjälpa dig med alla dina mobilbehov.",
+    "contact.visit.title": "Besök Oss i Kortedala",
+    "contact.visit.description": "Vi ligger på Kortedala Torg i Göteborg och välkomnar dig varmt till vår butik. Vårt erfarna och kunniga team finns på plats för att ge dig personlig service och experthjälp med alla dina mobilbehov. Oavsett om du behöver en snabb reparation, vill sälja eller köpa en telefon, eller bara vill titta på vårt sortiment av tillbehör - kom förbi så hjälper vi dig!",
   },
   en: {
     // Navigation
@@ -65,8 +66,8 @@ const translations = {
     
     // Home page
     "home.hero.title": "Welcome to Sheik Mobilecenter",
-    "home.hero.subtitle": "Everything in Mobile Telephony",
-    "home.hero.description": "We offer professional repairs, buy and sell phones, and provide a wide range of accessories. With years of experience and expertise, we guarantee quality in every service.",
+    "home.hero.subtitle": "Your Complete Mobile Partner",
+    "home.hero.description": "We provide professional service for all your mobile needs. We perform fast repairs with quality parts, buy and sell phones at fair prices, and offer a comprehensive range of accessories. With extensive experience and expertise, we always deliver first-class service.",
     "home.hero.cta": "Explore Our Services",
     "home.features.repair": "Fast Repairs",
     "home.features.repair.desc": "Professional repairs with original parts",
@@ -77,7 +78,8 @@ const translations = {
     
     // Services page
     "services.hero.title": "Our Services",
-    "services.hero.subtitle": "Complete Solutions for All Your Mobile Needs",
+    "services.hero.subtitle": "Professional Mobile Repairs and Sales with Warranty",
+    "services.hero.description": "We specialize in everything related to mobile phones. Whether your phone needs repair, you want to sell your old one or buy an upgraded model, or you're looking for high-quality accessories - we have the solution. Every service is performed with precision and care.",
     "services.repair.title": "Repair Services",
     "services.repair.screen": "Screen Replacement",
     "services.repair.battery": "Battery Replacement",
@@ -102,8 +104,8 @@ const translations = {
     "contact.info.hours": "Opening Hours",
     "contact.info.hours.weekdays": "Mon-Fri: 12:00 PM - 7:00 PM",
     "contact.info.hours.weekend": "Sat-Sun: 12:00 PM - 4:00 PM",
-    "contact.visit.title": "Visit Us",
-    "contact.visit.description": "We are centrally located in the city and welcome you to visit our store. Our experienced technicians are ready to help you with all your mobile needs.",
+    "contact.visit.title": "Visit Us in Kortedala",
+    "contact.visit.description": "We are located at Kortedala Torg in Gothenburg and warmly welcome you to our store. Our experienced and knowledgeable team is here to provide you with personal service and expert help with all your mobile needs. Whether you need a quick repair, want to sell or buy a phone, or just want to browse our range of accessories - stop by and we'll help you!",
   },
 };
 
