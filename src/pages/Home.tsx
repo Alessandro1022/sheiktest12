@@ -13,11 +13,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 opacity-0 animate-fade-in"
           style={{
             backgroundImage: `url(${heroImage})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
+            animationDelay: "0.1s",
+            animationFillMode: "forwards",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-background/70" />

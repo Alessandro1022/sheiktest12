@@ -17,7 +17,7 @@ const translations = {
     
     // Home page
     "home.hero.title": "Välkommen till Sheik Mobilecenter",
-    "home.hero.subtitle": "Din pålitliga partner för alla mobilbehov",
+    "home.hero.subtitle": "Allt inom mobiltelefoni",
     "home.hero.description": "Vi erbjuder professionella reparationer, köper och säljer telefoner samt erbjuder ett brett sortiment av tillbehör. Med års erfarenhet och expertis garanterar vi kvalitet i varje tjänst.",
     "home.hero.cta": "Utforska våra tjänster",
     "home.features.repair": "Snabba Reparationer",
@@ -52,9 +52,8 @@ const translations = {
     "contact.info.phone": "Telefon",
     "contact.info.email": "E-post",
     "contact.info.hours": "Öppettider",
-    "contact.info.hours.weekdays": "Mån-Fre: 10:00 - 18:00",
-    "contact.info.hours.saturday": "Lör: 11:00 - 16:00",
-    "contact.info.hours.sunday": "Sön: Stängt",
+    "contact.info.hours.weekdays": "Mån-Fre: 12:00 - 19:00",
+    "contact.info.hours.weekend": "Lör-Sön: 12:00 - 16:00",
     "contact.visit.title": "Besök Oss",
     "contact.visit.description": "Vi finns centralt i staden och välkomnar dig att besöka vår butik. Våra erfarna tekniker är redo att hjälpa dig med alla dina mobilbehov.",
   },
@@ -66,7 +65,7 @@ const translations = {
     
     // Home page
     "home.hero.title": "Welcome to Sheik Mobilecenter",
-    "home.hero.subtitle": "Your Reliable Partner for All Mobile Needs",
+    "home.hero.subtitle": "Everything in Mobile Telephony",
     "home.hero.description": "We offer professional repairs, buy and sell phones, and provide a wide range of accessories. With years of experience and expertise, we guarantee quality in every service.",
     "home.hero.cta": "Explore Our Services",
     "home.features.repair": "Fast Repairs",
@@ -101,9 +100,8 @@ const translations = {
     "contact.info.phone": "Phone",
     "contact.info.email": "Email",
     "contact.info.hours": "Opening Hours",
-    "contact.info.hours.weekdays": "Mon-Fri: 10:00 AM - 6:00 PM",
-    "contact.info.hours.saturday": "Sat: 11:00 AM - 4:00 PM",
-    "contact.info.hours.sunday": "Sun: Closed",
+    "contact.info.hours.weekdays": "Mon-Fri: 12:00 PM - 7:00 PM",
+    "contact.info.hours.weekend": "Sat-Sun: 12:00 PM - 4:00 PM",
     "contact.visit.title": "Visit Us",
     "contact.visit.description": "We are centrally located in the city and welcome you to visit our store. Our experienced technicians are ready to help you with all your mobile needs.",
   },

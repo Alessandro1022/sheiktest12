@@ -9,17 +9,12 @@ export default function Contact() {
     {
       icon: MapPin,
       label: t("contact.info.address"),
-      value: "Kungsgatan 45, Stockholm",
+      value: "Kortedala Torg 3",
     },
     {
       icon: Phone,
       label: t("contact.info.phone"),
-      value: "+46 70 123 45 67",
-    },
-    {
-      icon: Mail,
-      label: t("contact.info.email"),
-      value: "info@sheikmobile.se",
+      value: "0720-143 551",
     },
   ];
 
@@ -28,11 +23,13 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 opacity-0 animate-fade-in"
           style={{
             backgroundImage: `url(${heroImage})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
+            animationDelay: "0.1s",
+            animationFillMode: "forwards",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-background/70" />
@@ -77,8 +74,7 @@ export default function Contact() {
                   <h3 className="font-semibold mb-2">{t("contact.info.hours")}</h3>
                   <div className="space-y-1 text-muted-foreground">
                     <p>{t("contact.info.hours.weekdays")}</p>
-                    <p>{t("contact.info.hours.saturday")}</p>
-                    <p>{t("contact.info.hours.sunday")}</p>
+                    <p>{t("contact.info.hours.weekend")}</p>
                   </div>
                 </div>
               </div>
