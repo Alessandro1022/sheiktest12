@@ -57,6 +57,12 @@ const translations = {
     "contact.info.hours.weekend": "Lör-Sön: 12:00 - 16:00",
     "contact.visit.title": "Besök Oss i Kortedala",
     "contact.visit.description": "Vi ligger på Kortedala Torg i Göteborg och välkomnar dig varmt till vår butik. Vårt erfarna och kunniga team finns på plats för att ge dig personlig service och experthjälp med alla dina mobilbehov. Oavsett om du behöver en snabb reparation, vill sälja eller köpa en telefon, eller bara vill titta på vårt sortiment av tillbehör - kom förbi så hjälper vi dig!",
+    
+    // Footer
+    "footer.copyright": "© 2025 Sheik Mobilecenter. Alla rättigheter förbehållna.",
+    "footer.contact": "Kontakt",
+    "footer.address": "Kortedala Torg 3, Göteborg",
+    "footer.phone": "0720-143 551",
   },
   en: {
     // Navigation
@@ -106,6 +112,12 @@ const translations = {
     "contact.info.hours.weekend": "Sat-Sun: 12:00 PM - 4:00 PM",
     "contact.visit.title": "Visit Us in Kortedala",
     "contact.visit.description": "We are located at Kortedala Torg in Gothenburg and warmly welcome you to our store. Our experienced and knowledgeable team is here to provide you with personal service and expert help with all your mobile needs. Whether you need a quick repair, want to sell or buy a phone, or just want to browse our range of accessories - stop by and we'll help you!",
+    
+    // Footer
+    "footer.copyright": "© 2025 Sheik Mobilecenter. All rights reserved.",
+    "footer.contact": "Contact",
+    "footer.address": "Kortedala Torg 3, Gothenburg",
+    "footer.phone": "0720-143 551",
   },
 };
 
