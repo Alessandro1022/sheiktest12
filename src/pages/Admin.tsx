@@ -321,7 +321,7 @@ const Admin = () => {
                 <img 
                   src={product.image_url} 
                   alt={product.name}
-                  className="w-full h-48 object-cover rounded mb-4"
+                  className="w-full aspect-[9/16] object-contain bg-gray-100 rounded mb-4"
                 />
                 <h3 className="font-bold text-lg mb-2 text-gray-900">{product.name}</h3>
                 <p className="text-gray-700 text-sm mb-4">{product.description}</p>

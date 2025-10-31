@@ -55,11 +55,11 @@ const Products = () => {
                 key={product.id} 
                 className="glass rounded-2xl overflow-hidden hover:glass-strong transition-all duration-300"
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative aspect-[9/16] overflow-hidden bg-gray-100">
                   <img 
                     src={product.image_url} 
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                   <div 
                     className="absolute bottom-0 left-0 right-0 h-16 opacity-30"
