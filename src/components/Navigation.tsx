@@ -14,7 +14,9 @@ export function Navigation() {
   const navLinks = [
     { path: "/", label: t("nav.home") },
     { path: "/services", label: t("nav.services") },
+    { path: "/products", label: t("nav.products") },
     { path: "/contact", label: t("nav.contact") },
+    { path: "/admin", label: t("nav.admin") },
   ];
 
   return (
@@ -25,7 +27,7 @@ export function Navigation() {
           <Link to="/" className="flex items-center gap-2 text-2xl font-bold">
             <Smartphone className="w-8 h-8 text-primary" />
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Sheik Mobilecenter
+              Sheik Mobile Center
             </span>
           </Link>
 

@@ -13,10 +13,12 @@ const translations = {
     // Navigation
     "nav.home": "Hem",
     "nav.services": "Tjänster",
+    "nav.products": "Produkter",
     "nav.contact": "Kontakt",
+    "nav.admin": "Admin",
     
     // Home page
-    "home.hero.title": "Välkommen till Sheik Mobilecenter",
+    "home.hero.title": "Välkommen till Sheik Mobile Center",
     "home.hero.subtitle": "Din kompletta mobilpartner",
     "home.hero.description": "Hos oss får du professionell service för alla dina mobilbehov. Vi utför snabba reparationer med kvalitetsdelar, köper och säljer telefoner till rättvisa priser, och erbjuder ett omfattande sortiment av tillbehör. Med gedigen erfarenhet och expertis levererar vi alltid förstklassig service.",
     "home.hero.cta": "Utforska våra tjänster",
@@ -59,19 +61,43 @@ const translations = {
     "contact.visit.description": "Vi ligger på Kortedala Torg i Göteborg och välkomnar dig varmt till vår butik. Vårt erfarna och kunniga team finns på plats för att ge dig personlig service och experthjälp med alla dina mobilbehov. Oavsett om du behöver en snabb reparation, vill sälja eller köpa en telefon, eller bara vill titta på vårt sortiment av tillbehör - kom förbi så hjälper vi dig!",
     
     // Footer
-    "footer.copyright": "© 2025 Sheik Mobilecenter. Alla rättigheter förbehållna.",
+    "footer.copyright": "© 2025 Sheik Mobile Center. Alla rättigheter förbehållna.",
     "footer.contact": "Kontakt",
-    "footer.address": "Kortedala Torg 3, Göteborg",
-    "footer.phone": "0720-143 551",
+    "footer.address": "Kortedala Torg 4, 417 05 Göteborg",
+    "footer.phone": "Tel: 031-41 49 49",
+    
+    // Products
+    "products.title": "Våra Produkter",
+    "products.subtitle": "Upptäck vårt sortiment av produkter och tillbehör som finns i vår butik.",
+    
+    // Admin
+    "admin.title": "Adminpanel",
+    "admin.login.title": "Admin Inloggning",
+    "admin.login.email": "E-post",
+    "admin.login.password": "Lösenord",
+    "admin.login.submit": "Logga in",
+    "admin.login.error": "Ogiltiga uppgifter",
+    "admin.addProduct": "Lägg till Produkt",
+    "admin.editProduct": "Redigera Produkt",
+    "admin.deleteProduct": "Ta bort",
+    "admin.productName": "Produktnamn",
+    "admin.productDescription": "Beskrivning",
+    "admin.productImage": "Produktbild",
+    "admin.save": "Spara",
+    "admin.cancel": "Avbryt",
+    "admin.logout": "Logga ut",
+    "admin.uploadImage": "Ladda upp bild",
   },
   en: {
     // Navigation
     "nav.home": "Home",
     "nav.services": "Services",
+    "nav.products": "Products",
     "nav.contact": "Contact",
+    "nav.admin": "Admin",
     
     // Home page
-    "home.hero.title": "Welcome to Sheik Mobilecenter",
+    "home.hero.title": "Welcome to Sheik Mobile Center",
     "home.hero.subtitle": "Your Complete Mobile Partner",
     "home.hero.description": "We provide professional service for all your mobile needs. We perform fast repairs with quality parts, buy and sell phones at fair prices, and offer a comprehensive range of accessories. With extensive experience and expertise, we always deliver first-class service.",
     "home.hero.cta": "Explore Our Services",
@@ -114,10 +140,32 @@ const translations = {
     "contact.visit.description": "We are located at Kortedala Torg in Gothenburg and warmly welcome you to our store. Our experienced and knowledgeable team is here to provide you with personal service and expert help with all your mobile needs. Whether you need a quick repair, want to sell or buy a phone, or just want to browse our range of accessories - stop by and we'll help you!",
     
     // Footer
-    "footer.copyright": "© 2025 Sheik Mobilecenter. All rights reserved.",
+    "footer.copyright": "© 2025 Sheik Mobile Center. All rights reserved.",
     "footer.contact": "Contact",
-    "footer.address": "Kortedala Torg 3, Gothenburg",
-    "footer.phone": "0720-143 551",
+    "footer.address": "Kortedala Torg 4, 417 05 Gothenburg",
+    "footer.phone": "Phone: 031-41 49 49",
+    
+    // Products
+    "products.title": "Our Products",
+    "products.subtitle": "Discover our selection of products and accessories available in our store.",
+    
+    // Admin
+    "admin.title": "Admin Panel",
+    "admin.login.title": "Admin Login",
+    "admin.login.email": "Email",
+    "admin.login.password": "Password",
+    "admin.login.submit": "Login",
+    "admin.login.error": "Invalid credentials",
+    "admin.addProduct": "Add Product",
+    "admin.editProduct": "Edit Product",
+    "admin.deleteProduct": "Delete",
+    "admin.productName": "Product Name",
+    "admin.productDescription": "Description",
+    "admin.productImage": "Product Image",
+    "admin.save": "Save",
+    "admin.cancel": "Cancel",
+    "admin.logout": "Logout",
+    "admin.uploadImage": "Upload Image",
   },
 };
 

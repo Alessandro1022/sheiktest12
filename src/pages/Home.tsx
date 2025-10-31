@@ -37,7 +37,7 @@ export default function Home() {
             <Link to="/services">
               <Button 
                 size="lg" 
-                className="bg-gradient-primary hover:scale-105 hover:shadow-2xl hover:shadow-primary/50 text-background font-semibold px-8 py-6 text-lg rounded-2xl animate-in fade-in slide-in-from-bottom-7 duration-700 delay-500 transition-all"
+                className="bg-accent hover:scale-105 hover:shadow-2xl hover:shadow-accent/50 text-white font-semibold px-8 py-6 text-lg rounded-2xl animate-in fade-in slide-in-from-bottom-7 duration-700 delay-500 transition-all"
               >
                 {t("home.hero.cta")}
               </Button>

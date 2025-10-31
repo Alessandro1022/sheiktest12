@@ -13,7 +13,7 @@ export function Footer() {
             <div className="flex items-center gap-2 text-xl font-bold">
               <Smartphone className="w-6 h-6 text-primary" />
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Sheik Mobilecenter
+                Sheik Mobile Center
               </span>
             </div>
             <p className="text-sm text-muted-foreground text-center md:text-left">
