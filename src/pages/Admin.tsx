@@ -44,14 +44,17 @@ const Admin = () => {
   }, []);
 
   const checkAdminStatus = async (userId: string) => {
-    const { data } = await supabase
-      .from('user_roles')
-      .select('role')
-      .eq('user_id', userId)
-      .eq('role', 'admin')
-      .maybeSingle();
-    
-    setIsAdmin(!!data);
+    const { data, error } = await supabase.rpc('has_role', {
+      _user_id: userId,
+      _role: 'admin',
+    });
+
+    if (error) {
+      setIsAdmin(false);
+      return;
+    }
+
+    setIsAdmin(Boolean(data));
   };
 
   const { data: products } = useQuery({
