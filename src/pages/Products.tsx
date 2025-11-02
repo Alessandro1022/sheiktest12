@@ -49,26 +49,42 @@ const Products = () => {
         {isLoading ? (
           <div className="text-center text-muted-foreground">Laddar produkter...</div>
         ) : products && products.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {products.map((product) => (
               <div 
                 key={product.id} 
-                className="glass rounded-2xl overflow-hidden hover:glass-strong transition-all duration-300"
+                className="group glass rounded-xl overflow-hidden hover:glass-strong transition-all duration-300 hover:scale-[1.02]"
               >
-                <div className="relative aspect-[9/16] overflow-hidden bg-gray-100">
+                <div className="relative aspect-[3/4] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
                   <img 
                     src={product.image_url} 
                     alt={product.name}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div 
-                    className="absolute bottom-0 left-0 right-0 h-16 opacity-30"
-                    style={{ backgroundImage: `url(${marblePattern})`, backgroundSize: 'cover' }}
-                  />
+                  {product.condition && (
+                    <div className="absolute top-3 right-3">
+                      <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                        product.condition === 'new' 
+                          ? 'bg-primary/90 text-white' 
+                          : 'bg-accent/90 text-white'
+                      }`}>
+                        {product.condition === 'new' ? 'NY' : 'BEGAGNAD'}
+                      </span>
+                    </div>
+                  )}
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3">{product.name}</h3>
-                  <p className="text-muted-foreground">{product.description}</p>
+                <div className="p-5">
+                  <h3 className="text-xl font-bold mb-2 line-clamp-1">{product.name}</h3>
+                  <p className="text-muted-foreground text-sm mb-3 line-clamp-2 min-h-[2.5rem]">
+                    {product.description}
+                  </p>
+                  {product.price && (
+                    <div className="mt-4 pt-4 border-t border-border">
+                      <p className="text-2xl font-bold text-primary">
+                        {product.price.toLocaleString('sv-SE')} kr
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

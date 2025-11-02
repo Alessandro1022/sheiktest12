@@ -21,6 +21,8 @@ const Admin = () => {
   const [editingProduct, setEditingProduct] = useState<any>(null);
   const [productName, setProductName] = useState("");
   const [productDescription, setProductDescription] = useState("");
+  const [productPrice, setProductPrice] = useState("");
+  const [productCondition, setProductCondition] = useState<"new" | "used">("new");
   const [productImage, setProductImage] = useState<File | null>(null);
 
   useEffect(() => {
@@ -124,6 +126,8 @@ const Admin = () => {
           .update({
             name: productName,
             description: productDescription,
+            price: productPrice ? parseFloat(productPrice) : null,
+            condition: productCondition,
             image_url: imageUrl,
           })
           .eq('id', editingProduct.id);
@@ -139,6 +143,8 @@ const Admin = () => {
           .insert({
             name: productName,
             description: productDescription,
+            price: productPrice ? parseFloat(productPrice) : null,
+            condition: productCondition,
             image_url: imageUrl,
           });
 
@@ -151,6 +157,8 @@ const Admin = () => {
       setEditingProduct(null);
       setProductName("");
       setProductDescription("");
+      setProductPrice("");
+      setProductCondition("new");
       setProductImage(null);
       toast({
         title: "Sparat",
@@ -278,6 +286,25 @@ const Admin = () => {
               onChange={(e) => setProductDescription(e.target.value)}
               className="border-gray-300 bg-white text-gray-900"
             />
+            <Input
+              type="number"
+              step="0.01"
+              placeholder="Pris (kr)"
+              value={productPrice}
+              onChange={(e) => setProductPrice(e.target.value)}
+              className="border-gray-300 bg-white text-gray-900"
+            />
+            <div>
+              <label className="block text-sm font-medium mb-2 text-gray-900">Skick</label>
+              <select
+                value={productCondition}
+                onChange={(e) => setProductCondition(e.target.value as "new" | "used")}
+                className="flex h-10 w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900"
+              >
+                <option value="new">Ny</option>
+                <option value="used">Begagnad</option>
+              </select>
+            </div>
             <div>
               <label className="block text-sm font-medium mb-2 text-gray-900">
                 {t("admin.uploadImage")}
@@ -303,6 +330,8 @@ const Admin = () => {
                     setEditingProduct(null);
                     setProductName("");
                     setProductDescription("");
+                    setProductPrice("");
+                    setProductCondition("new");
                     setProductImage(null);
                   }}
                 >
@@ -324,7 +353,13 @@ const Admin = () => {
                   className="w-full aspect-[9/16] object-contain bg-gray-100 rounded mb-4"
                 />
                 <h3 className="font-bold text-lg mb-2 text-gray-900">{product.name}</h3>
-                <p className="text-gray-700 text-sm mb-4">{product.description}</p>
+                <p className="text-gray-700 text-sm mb-2">{product.description}</p>
+                {product.price && (
+                  <p className="text-primary font-bold mb-2">{product.price} kr</p>
+                )}
+                <p className="text-xs text-gray-500 mb-4">
+                  {product.condition === 'new' ? 'Ny' : 'Begagnad'}
+                </p>
                 <div className="flex gap-2">
                   <Button
                     size="sm"
@@ -332,6 +367,8 @@ const Admin = () => {
                       setEditingProduct(product);
                       setProductName(product.name);
                       setProductDescription(product.description);
+                      setProductPrice(product.price?.toString() || "");
+                      setProductCondition((product.condition as "new" | "used") || "new");
                     }}
                   >
                     {t("admin.editProduct")}
